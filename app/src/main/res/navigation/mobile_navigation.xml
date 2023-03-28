@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_assets">
+
+    <fragment
+        android:id="@+id/nav_assets"
+        android:name="com.example.coincap.ui.assets.AssetsFragment"
+        android:label="@string/menu_assets"
+        tools:layout="@layout/fragment_assets">
+        <action android:id="@+id/action_assets_to_asset_details"
+            app:destination="@+id/assetDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_rates"
+        android:name="com.example.coincap.ui.rates.RatesFragment"
+        android:label="@string/menu_rates"
+        tools:layout="@layout/fragment_rates">
+    <action android:id="@+id/action_rates_to_rates_details"
+        app:destination="@+id/ratesDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_exchanges"
+        android:name="com.example.coincap.ui.exchanges.ExchangesFragment"
+        android:label="@string/menu_exchanges"
+        tools:layout="@layout/fragment_exchanges">
+    <action android:id="@+id/action_exchanges_to_exchanges_details"
+        app:destination="@+id/exchangesDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_markets"
+        android:name="com.example.coincap.ui.markets.MarketsFragment"
+        android:label="@string/menu_markets"
+        tools:layout="@layout/fragment_markets">
+    <action android:id="@+id/action_markets_to_markets_details"
+        app:destination="@+id/marketsDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/assetDetailsFragment"
+        android:name="com.example.coincap.ui.assetdetails.AssetDetailsFragment"
+        android:label="Asset Details"
+        tools:layout="@layout/fragment_asset_details"/>
+
+
+    <fragment
+        android:id="@+id/ratesDetailsFragment"
+        android:name="com.example.coincap.ui.ratesdetails.RatesDetailsFragment"
+        android:label="Rate Details"
+        tools:layout="@layout/fragment_rates_details" />
+    <fragment
+        android:id="@+id/exchangesDetailsFragment"
+        android:name="com.example.coincap.ui.exchangesdetails.ExchangesDetailsFragment"
+        android:label="Exchange Details"
+        tools:layout="@layout/fragment_exchanges_details" />
+    <fragment
+        android:id="@+id/marketsDetailsFragment"
+        android:name="com.example.coincap.ui.marketsdetails.MarketsDetailsFragment"
+        android:label="Market Details"
+        tools:layout="@layout/fragment_markets_details" />
+</navigation>
