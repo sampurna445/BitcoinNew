@@ -6,9 +6,10 @@ import com.example.coincap.data.model.assets.AssetsModel
 import com.example.coincap.data.model.exchanges.ExchangesModel
 import com.example.coincap.data.remote.ApiDetails
 import com.example.coincap.data.remote.ApiRequest
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-
+@HiltViewModel
 class ExchangesViewModel : ViewModel() {
 
 

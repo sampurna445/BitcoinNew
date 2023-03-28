@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import com.example.coincap.R
 import com.example.coincap.data.model.assets.DataModel
 import com.example.coincap.databinding.FragmentAssetDetailsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AssetDetailsFragment : Fragment() {
 
     private var _binding: FragmentAssetDetailsBinding? = null

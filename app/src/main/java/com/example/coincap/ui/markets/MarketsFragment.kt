@@ -13,7 +13,9 @@ import com.example.coincap.data.model.markets.DataModel3
 import com.example.coincap.data.model.markets.MarketsModel
 import com.example.coincap.databinding.FragmentMarketsBinding
 import com.example.coincap.ui.assets.AssetsAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MarketsFragment : Fragment() {
     private lateinit var viewModel: MarketsViewModel
     private var _binding: FragmentMarketsBinding? = null

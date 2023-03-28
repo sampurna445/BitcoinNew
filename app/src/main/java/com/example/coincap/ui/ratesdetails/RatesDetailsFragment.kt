@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.coincap.data.model.rates.DataModel1
 import com.example.coincap.databinding.FragmentRatesDetailsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RatesDetailsFragment : Fragment() {
 
     private var _binding: FragmentRatesDetailsBinding? = null

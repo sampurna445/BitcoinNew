@@ -12,7 +12,9 @@ import com.example.coincap.R
 import com.example.coincap.data.model.rates.DataModel1
 import com.example.coincap.data.model.rates.RatesModel
 import com.example.coincap.databinding.FragmentRatesBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RatesFragment : Fragment() {
 
     private lateinit var viewModel: RatesViewModel

@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.coincap.R
 import com.example.coincap.data.model.assets.AssetsModel
 import com.example.coincap.databinding.FragmentAssetsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AssetsFragment : Fragment() {
 
     private lateinit var viewModel: AssetsViewModel

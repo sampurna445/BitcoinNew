@@ -13,7 +13,9 @@ import com.example.coincap.data.model.exchanges.DataModel2
 import com.example.coincap.data.model.exchanges.ExchangesModel
 import com.example.coincap.databinding.FragmentExchangesBinding
 import com.example.coincap.ui.assets.AssetsAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ExchangesFragment : Fragment() {
 
     private lateinit var viewModel: ExchangesViewModel
